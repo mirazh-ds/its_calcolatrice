@@ -1,0 +1,78 @@
+@media (max-width: 1000px) {
+    html {
+        display: flex;
+        min-width: 100vh;
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: rgb(197, 177, 223);
+        display: flex;
+        flex: 1;
+        padding: 120px;
+    
+    }
+    
+    .risult {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    
+    .grosso {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    
+    }
+    
+    .top {
+        display: flex;
+        flex: 0.2;
+        flex-direction: row;
+        
+        
+        
+    }
+    
+    .bottom {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+    
+    .left {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+        width: 75%;
+    }
+    
+    .left input {
+        padding: 0px;
+        margin: 5px;
+        border-radius: ;
+        width: ;
+    }
+    
+    .right {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        width: 25%;
+        
+        
+        flex-direction: column;
+        width: 25%;  
+    }
+    
+    .right input {
+        margin: 5px;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    BRO NON E FINITO UN CA MI SONO SCOCCIATO POI FINISCO
+    
+}
