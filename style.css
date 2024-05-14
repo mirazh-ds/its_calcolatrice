@@ -13,32 +13,43 @@ body {
 }
 
 .risult {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     border-radius: 1rem;
-    margin-left: 0;
-    margin-right: 0;
+    min-height: auto;
+    min-width: auto;
+    height: 140%;
+    width: 90%;
+    
+    
+}
+
+.ci {
+    justify-self: center;
+    width: 40%;
+    height: 150%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: chocolate;
 }
 
 .grosso {
+    transition: 2s;
     display: flex;
     flex: 1;
     flex-direction: column;
     background-color: aliceblue;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem 2rem 5rem 1rem;
     border: solid .25rem cadetblue;
 
 }
 
 .top {
-    display: flex;
-    flex: 0.2;
-    flex-direction: row;
-    
-    
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ; 
+    gap: 20px;
+    margin-top: 28px;
 }
 
 .bottom {
@@ -56,6 +67,8 @@ body {
     width: 100%;
     grid-gap: 0.3rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
+    row-gap: 10px;
 }
 
 .btn {
@@ -67,20 +80,27 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 2px 4px grey; 
-    background-color: rgba(255, 217, 0, 0.753);
+    background-color: rgba(101, 90, 255, 0.753);
 }
+
+
 
 .btn:active {
     background-color:gold;
     box-shadow: none;
+    filter: drop-shadow(-3px -3px 0px rgb(156, 156, 156))
+    
 }
 
 
 .right {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 0px;
     width: 25%;
+    margin: 70px 0 90px 10px;
+    gap: 10px;
+    
     
     
     flex-direction: column;
@@ -88,7 +108,7 @@ body {
 }
 
 .right input {
-    margin: 5px;
+    background-color: violet;
 
 }
 
@@ -111,14 +131,22 @@ body {
     
     .risult {
         display: flex;
-        flex: 1;
+        flex: 4;
         flex-direction: column;
         border-radius: 1rem;
-        margin-left: 20px;
-        margin-right: 26%;
+        
+    }
+
+    .ci {
+        display: flex;
+        flex: 1;
+        background-color: aqua;
+        width: auto;
+        height: ;
     }
     
     .grosso {
+        transition: 2s;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -131,8 +159,9 @@ body {
     
     .top {
         display: flex;
-        flex: 0.2;
+        height: 10%;
         flex-direction: row;
+        gap:8%;
         
         
         
@@ -190,98 +219,104 @@ body {
 
 
 @media (min-width: 1200px){
-html {
-        display: flex;
-        min-width: 100vh;
-        min-height: 100vh;
-    }
-    
-    body {
-        background-color: rgb(197, 177, 223);
-        display: flex;
-        flex: 1;
-        padding: 120px;
-        justify-content: center;
-    
-    }
-    
-    .risult {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        border-radius: 1rem;
-        margin-left: 20px;
-        margin-right: 26%;
-        
-    }
-    
-    .grosso {
-        justify-content: center;
-        display: flex;
-        flex: 0.4;
-        flex-direction: column;
-        background-color: aliceblue;
-        padding: 2rem;
-        border-radius: 2rem 2rem 5rem 1rem;
-        border: solid .25rem cadetblue;
-    
-    }
-    
-    .top {
-        display: flex;
-        flex: 0.2;
-        flex-direction: row;
-        
-        
-        
-    }
-    
-    .bottom {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-    }
-    
-    .left {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 0;
-        width: 75%;
-        grid-gap: 0.5rem;
-        margin: 2rem;
-    }
-    
-    .btn {
-        
-        padding: 0px;
-        margin-top: 15px;
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 2px 4px grey; 
-        background-color: rgba(255, 217, 0, 0.753);
-    }
+    display: flex;
+    min-width: 100vh;
+    min-height: 100vh;
+}
 
-    .btn:active {
-        background-color:gold;
-        box-shadow: none;
-    }
+body {
+    background-color: rgb(197, 177, 223);
+    display: flex;
+    flex: 1;
+    padding: 120px;
+    justify-content: center;
+}
+
+.grosso:hover {
+    box-shadow: 1px 1px 50px grey;
+    scale: 120%;
+    transition: 1s;
+}
+
+.ci {
+    justify-self: end;
+    width: 20%;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.risult {
+    justify-self: center;
+}
+
+.grosso {
+    transition: 2s;
+    justify-content: center;
+    display: flex;
+    flex: 0.4;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 2rem 2rem 5rem 1rem;
+    border: solid .25rem cadetblue;
+
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:;
+    padding: 0;
+    width: 75%;
+    grid-gap: 0.5rem;
+    margin: 2rem;
+    
+}
+
+.btn {
+    
+    padding: 0px;
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px grey; 
+    background-color: rgba(255, 217, 0, 0.753);
+}
+
+.btn:active {
+    background-color:gold;
+    box-shadow: none;
+}
 
 
-    .right {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 20px;
-        width: 25%;
-        
-        
-        flex-direction: column;
-        width: 25%;  
-    }
+.right {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    width: 25%;
     
-    .right input {
-        margin: 5px;
     
-    }
+    flex-direction: column;
+    width: 25%;  
+}
+
+.right input {
+    margin: 5px;
+
+}
 }
