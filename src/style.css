@@ -218,7 +218,8 @@ body {
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
+html{
     display: flex;
     min-width: 100vh;
     min-height: 100vh;
