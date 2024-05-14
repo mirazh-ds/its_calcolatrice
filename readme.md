@@ -1,7 +1,5 @@
 # Progettino Calcolatrice ITS <br />
 
-## Siete liberi di editare e di aggiungere funzionalità come volete nel tempo libero <br />
-
 ### to do:
 
 script:
@@ -12,8 +10,8 @@ script:
  -cercare bug (per ora ho risolto quelli più stupidi) <br />
 css: <br />
  -se la vede andrea <br />
- -il tasto canc è buggato, funziona solo se clicchi in alto a destra
-html: <br />
+ -il tasto canc è buggato, funziona solo se clicchi in alto a destra  <br />
+html:
  -bottoni per le operazioni + backspace <br />
  -aggiungere minimo una mascotte simpatica <br />
 @self: <br />
