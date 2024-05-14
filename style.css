@@ -1,4 +1,100 @@
-@media (max-width: 1000px) {
+html {
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(111, 0, 255);
+    display: flex;
+    flex: 1;
+    
+
+}
+
+.risult {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.grosso {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 2rem 2rem 5rem 1rem;
+    border: solid .25rem cadetblue;
+
+}
+
+.top {
+    display: flex;
+    flex: 0.2;
+    flex-direction: row;
+    
+    
+    
+}
+
+.bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin: 0;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100%;
+    grid-gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    
+    padding: 0px;
+    margin-top: 0px;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px grey; 
+    background-color: rgba(255, 217, 0, 0.753);
+}
+
+.btn:active {
+    background-color:gold;
+    box-shadow: none;
+}
+
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    width: 25%;
+    
+    
+    flex-direction: column;
+    width: 25%;  
+}
+
+.right input {
+    margin: 5px;
+
+}
+
+
+
+@media (min-width: 800px) { /*tablet*/
     html {
         display: flex;
         min-width: 100vh;
@@ -17,12 +113,19 @@
         display: flex;
         flex: 1;
         flex-direction: column;
+        border-radius: 1rem;
+        margin-left: 20px;
+        margin-right: 26%;
     }
     
     .grosso {
         display: flex;
         flex: 1;
         flex-direction: column;
+        background-color: aliceblue;
+        padding: 2rem;
+        border-radius: 2rem 2rem 5rem 1rem;
+        border: solid .25rem cadetblue;
     
     }
     
@@ -44,17 +147,30 @@
     .left {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 20px;
+        padding: 0;
         width: 75%;
+        grid-gap: 0.5rem;
+        margin: 2rem;
     }
     
-    .left input {
+    .btn {
+        
         padding: 0px;
-        margin: 5px;
-        border-radius: ;
-        width: ;
+        margin-top: 15px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 4px grey; 
+        background-color: rgba(255, 217, 0, 0.753);
     }
-    
+
+    .btn:active {
+        background-color:gold;
+        box-shadow: none;
+    }
+
+
     .right {
         display: grid;
         grid-template-columns: 1fr;
@@ -72,7 +188,100 @@
     }
 }
 
-@media (max-width: 500px) {
-    BRO NON E FINITO UN CA MI SONO SCOCCIATO POI FINISCO
+
+@media (min-width: 1200px){
+html {
+        display: flex;
+        min-width: 100vh;
+        min-height: 100vh;
+    }
     
+    body {
+        background-color: rgb(197, 177, 223);
+        display: flex;
+        flex: 1;
+        padding: 120px;
+        justify-content: center;
+    
+    }
+    
+    .risult {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        border-radius: 1rem;
+        margin-left: 20px;
+        margin-right: 26%;
+        
+    }
+    
+    .grosso {
+        justify-content: center;
+        display: flex;
+        flex: 0.4;
+        flex-direction: column;
+        background-color: aliceblue;
+        padding: 2rem;
+        border-radius: 2rem 2rem 5rem 1rem;
+        border: solid .25rem cadetblue;
+    
+    }
+    
+    .top {
+        display: flex;
+        flex: 0.2;
+        flex-direction: row;
+        
+        
+        
+    }
+    
+    .bottom {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+    
+    .left {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0;
+        width: 75%;
+        grid-gap: 0.5rem;
+        margin: 2rem;
+    }
+    
+    .btn {
+        
+        padding: 0px;
+        margin-top: 15px;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 4px grey; 
+        background-color: rgba(255, 217, 0, 0.753);
+    }
+
+    .btn:active {
+        background-color:gold;
+        box-shadow: none;
+    }
+
+
+    .right {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        width: 25%;
+        
+        
+        flex-direction: column;
+        width: 25%;  
+    }
+    
+    .right input {
+        margin: 5px;
+    
+    }
 }
